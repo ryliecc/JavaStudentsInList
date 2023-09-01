@@ -1,12 +1,16 @@
 public class Course {
-    String courseName;
-    String professor;
-    int roomNumber;
+    public String courseName;
+    public String professor;
+    public int roomNumber;
 
     public Course(String courseName, String professor, int roomNumber) {
         this.courseName = courseName;
         this.professor = professor;
         this.roomNumber = roomNumber;
+    }
+
+    public Course(){
+
     }
 
     public String getCourseName() {
@@ -31,5 +35,14 @@ public class Course {
 
     public void setRoomNumber(int roomNumber) {
         this.roomNumber = roomNumber;
+    }
+
+    @Override
+    public String toString() {
+        return "Course{" +
+                "courseName='" + courseName + '\'' +
+                ", professor='" + professor + '\'' +
+                ", roomNumber=" + roomNumber +
+                '}';
     }
 }
