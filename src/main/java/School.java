@@ -1,11 +1,21 @@
-import java.util.ArrayList;
 import java.util.List;
 
 public class School {
-    List<Student> studentsOfPunk = new ArrayList<>();
+    List<Student> studentsOfPunk;
 
-    public void addStudent(String firstName, String lastName, int matrikelNumber){
-        Student student = new Student(firstName, lastName, matrikelNumber);
+    public List<Student> getStudentsOfPunk() {
+        return studentsOfPunk;
+    }
+
+    public void setStudentsOfPunk(List<Student> studentsOfPunk) {
+        this.studentsOfPunk = studentsOfPunk;
+    }
+
+    public School(List<Student> studentsOfPunk) {
+        this.studentsOfPunk = studentsOfPunk;
+    }
+
+    public void addStudent(Student student){
         studentsOfPunk.add(student);
     }
 

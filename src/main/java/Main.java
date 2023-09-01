@@ -13,6 +13,14 @@ public class Main {
         students.add(angie);
         students.add(daddy);
         students.add(lilOldie);
+
+        School schoolOfSwag = new School(students);
+
+        System.out.println(schoolOfSwag.findStudent(1312));
+
+        Student myselfLol = new Student("Rylie", "Castell", 420161);
+        schoolOfSwag.addStudent(myselfLol);
+        System.out.println(schoolOfSwag.findStudent(420161));
     }
 
 
