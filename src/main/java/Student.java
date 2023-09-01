@@ -2,14 +2,18 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Student {
-    String firstName;
-    String lastName;
-    int matrikelNumber;
+    public String firstName;
+    public String lastName;
+    public int matrikelNumber;
 
     public Student(String firstName, String lastName, int matrikelNumber) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.matrikelNumber = matrikelNumber;
+    }
+
+    public Student() {
+
     }
 
     public String getFirstName() {
@@ -36,5 +40,12 @@ public class Student {
         this.matrikelNumber = matrikelNumber;
     }
 
-
+    @Override
+    public String toString() {
+        return "Student{" +
+                "firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", matrikelNumber=" + matrikelNumber +
+                '}';
+    }
 }
